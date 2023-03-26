@@ -1,0 +1,323 @@
+<!DOCTYPE html>  
+    <html lang="en-US" xml:lang="en">
+        <head>
+            <title>Fugazi</title>
+            <link rel="alternate" hreflang="pl" href="https://www.stag.pl">
+            <link rel="alternate" hreflang="en" href="https://www.stag.pl/en/">
+            <link rel="alternate" hreflang="ua" href="https://www.stag.pl/ua/">
+            <meta property="og:description" content="Fugazi Autogaz Autoserwis,najstarsza krakowska firma od 1993 w branży LPG i CNG.25 tyś.montaży.Instalacje gazowe AC Stag,Lovato,Landirenzo.">
+            <link rel="alternate" hreflang="x-default" href="https://www.auto-gaz.pl">
+            <link rel="website icon" type="png" href="obrazy/logo5.png">
+            <link rel="stylesheet" type="text/css" href="style.css">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+            <script src="https://kit.fontawesome.com/b0e2697821.js" crossorigin="anonymous"></script>
+              <script src="js/jquery.min.js"></script>
+        </head>
+        <body>
+            <header id="navbar">
+                <div class="container">
+                    <img src="obrazy/fugazi logo2.jpg" alt="logo" class="logo">
+                    <p style="color: white; display:flex;flex-direction: column;float: left;clear: right;"><span style="color:red">Autogas</span><span style="color: rgb(255, 145, 0);">Car Mechanics</span>
+                    </p>
+                <nav class="navik">
+                    <ol>
+                        <li><a href="#">News</a></li>
+                        <li><a href="#">Offer</a></li>
+                        <li><a href="#">Gallery</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">About us</a></li>
+                    </ol>
+                </nav>
+                <div class="langbtn">
+                  <ul>
+                    <li style=" list-style-type: none;"><button style="font-size:1.5em; padding-right: 4em; color: blue;border: none;background-color: transparent;transition: scale 250ms;" onclick="toggle_visibility();"><i class="fa-solid fa-language"></i></button>
+                      <ul id="tak" style=" list-style-type: none; position: absolute; right:57.7%;display: none;">
+                        <li ><a href="glowna.html"><img src="obrazy/polska.png" alt="pl" style="  width: 1.5em; margin-top: 2em;" id="pl"></a></li>
+                        <li><a href="glowna-eng.html"><img src="obrazy/engflag.png" alt="eng" style="  width: 1.5em; height: auto;padding-top: 0.5em;" id="eng"></a></li>
+                        <li><a href="glowna-ua.html"><img src="obrazy/ukraina.png" alt="ua" style="  width: 1.5em; height: auto;padding-top: 0.5em;" id="ua"></a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                  <script>
+                    function toggle_visibility(tak) {
+        var e = document.getElementById('tak');
+        if(e.style.display == "block")
+          e.style.display = "none";
+        else
+          e.style.display = "block";
+	}
+                  </script>
+                </div>
+                <content>
+                <input id="toggle" type="checkbox"></input>
+
+<label for="toggle" class="hamburger">
+  <div class="top-bun"></div>
+  <div class="meat"></div>
+  <div class="bottom-bun"></div>
+</label>
+
+<div class="nav">
+  <div class="nav-wrapper">
+    <nav class="navek"><input id="toggle" type="checkbox"></input>
+
+        <label for="toggle" class="hamburger">
+          <div class="top-bun"></div>
+          <div class="meat"></div>
+          <div class="bottom-bun"></div>
+        </label>
+        
+        <div class="nav">
+          <div class="nav-wrapper">
+            <nav>
+              <a href="#">HOME</a><br>
+              <a href="#">ABOUT</a><br>
+              <a href="#">WORK</a><br>
+              <a href="#">SERVICES</a>
+            </nav>
+          </div>
+        </div>
+      <a href="#">HOME</a><br>
+      <a href="#">ABOUT</a><br>
+      <a href="#">WORK</a><br>
+      <a href="#">SERVICES</a>
+    </nav>
+  </div>
+</div>
+</content>
+<div class="cookies-eu-banner hidden">
+    Our website uses<span class="ciastko">cookies</span>. By using the website, you consent to the use of cookies in accordance with the current browser settings.
+  <button>Accept</button>
+</div>
+<script>(() => {
+  const getCookie = (name) => {
+    const value = " " + document.cookie;
+    console.log("value", `==${value}==`);
+    const parts = value.split(" " + name + "=");
+    return parts.length < 2 ? undefined : parts.pop().split(";").shift();
+  };
+
+  const setCookie = function (name, value, expiryDays, domain, path, secure) {
+    const exdate = new Date();
+    exdate.setHours(
+      exdate.getHours() +
+        (typeof expiryDays !== "number" ? 365 : expiryDays) * 24
+    );
+    document.cookie =
+      name +
+      "=" +
+      value +
+      ";expires=" +
+      exdate.toUTCString() +
+      ";path=" +
+      (path || "/") +
+      (domain ? ";domain=" + domain : "") +
+      (secure ? ";secure" : "");
+  };
+
+  const $cookiesBanner = document.querySelector(".cookies-eu-banner");
+  const $cookiesBannerButton = $cookiesBanner.querySelector("button");
+  const cookieName = "cookiesBanner";
+  const hasCookie = getCookie(cookieName);
+
+  if (!hasCookie) {
+    $cookiesBanner.classList.remove("hidden");
+  }
+
+  $cookiesBannerButton.addEventListener("click", () => {
+    setCookie(cookieName, "closed");
+    $cookiesBanner.remove();
+  });
+})();</script>
+            </header>
+                <section>
+                    <div class="kontener">
+                        
+                        <div class="filmik">
+                           <span style="font-size: clamp(1rem, 1.5vw, 2rem);"><h2>For 30 years<br> we create<br> and we develop the industry<br> autogas in<br> Poland.</h2></span><span style="border-bottom:3px solid white; width:20%;margin: 0 auto;"></span><br> 
+                           Established in 1993 in Krakow, <br>
+                           Fugazi was one of the first companies in Poland, <br>which operated in the autogas industry, introduced modern, <br>At that time, little-known products of this industry.
+                           From a small company composed of several people <br>in 27 years it has transformed into 2 dynamically and stably <br>operating companies Fugazi and Pegas, <br>employing over 25 people in 3 retail outlets including <br>
+                           with its range the area of ​​southern Poland.
+                            <button class="dalej">Read on<i class="fa-solid fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+                </section>
+
+                <div class="cont home-intro">
+                  <div class="qanda">
+                    <div class="questions">
+                      <p class="fromdown slidein">Do you have any questions?</p>
+                      <a href="#" class="my-btn fromdown slidein">Contact Form</a>
+                    </div>
+                    <div class="answears">
+                      <table>
+                        <tr class="slidein fromleft">
+                          <th><i class="fa-solid fa-piggy-bank"></i><br><span style="font-size:0.3em;margin:0 !important;">Savings</span></th>
+                          <th><i class="fa-solid fa-thumbs-up"></i><br><span style="font-size:0.3em;margin:0 !important;">Reliable Quality</span></th>
+                        </tr>
+                        <tr class="slidein fromleft">
+                          
+                          <td>Traveling with LPG is up to 50% cheaper than traveling <br>on conventional fuel. Two fuel tanks <br>also mean double the range!</td>
+                          <td>It gives a sense of security during the trip. <br>The FUGAZI guarantee provides guarantee protection <br>components of LPG installations.</td>
+                        </tr>
+                        <tr class="slidein fromleft">
+                          <th><i class="fa-solid fa-leaf"></i><br><span style="font-size:0.3em;margin:0 !important;">Ecology</span></th>
+                          <th><i class="fa-regular fa-face-smile-beam"></i></i><br><span style="font-size:0.3em;margin:0 !important;">Satisfied customer</span></th>
+                        </tr>
+                        <tr class="slidein fromleft">
+                          
+                          <td>LPG means lower emission of harmful compounds to <br>atmosphere. Less exhaust gas means less greenhouse gases <br>and cleaner air.</td>
+                          <td>Fast and professional customer service. FUGAZI workshop <br>will provide professional service for <br>reasonable price.</td>
+                        </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="slidein2 fromright">
+                <form action="/action_page.php" >
+                <div class="newsletter">
+                <p style="font-size:clamp(1em, 1.5vw, 2em);color: white;margin: 0.5em;margin-top: 1em;font-weight: 700;">Newsletter:</p>
+                  <input type="text" name="E-mail" id="E-mail" placeholder="Enter your email address" required>
+                  <input type="submit" class="wyślij" value="Send">
+                </div>
+                <div style="background-color: red;color: white; padding: 0.7em; text-align: center; padding-top: 0em !important;">
+                <input type="checkbox" name="" id="zgoda">I consent to the processing of my personal data for the purpose of sending the newsletter ... <span id="popup-btn" class="text-white pointer" onclick="zgoda()">(more)</span></input>
+                <div style="display:none; text-align: center;padding: 3em;padding-bottom:1em; border:1px solid red;
+                background-color: white;color: grey;font-size: 1rem; margin-left: 0 auto; margin-top:1em;" id="consent">
+                 I agree to the processing of my personal data by Pegas s.c Marek Radoszyn Tomasz Miksa, 30-148 Kraków ul. Lindego 20, NIP: 6772198732, Regon: 356562937, biuro@pegas.biz, in order to send the newsletter. Providing data is voluntary. The basis for data processing is my consent. The recipients of the data may be entities that provide IT or logistic services to the data administrator. I have the right to withdraw my consent at any time. Personal data will be processed until the consent is revoked, and after such revocation, for the period of limitation of claims due to the data controller and in relation to him. I have the right to request the administrator to access my personal data, rectify it, delete or limit processing, as well as the right to lodge a complaint with the supervisory authority. I know that in order to limit my receipt of potentially uninteresting content, profiling takes place
+              <br><br><span style="text-decoration:underline;text-transform:uppercase;font-weight:700;" class="off" onclick="zgodaoff()">Close</span>
+                </div>
+                <script>
+                  function zgoda() {
+                    document.getElementById("consent").style.display = "block";
+                    document.getElementById("consent").style.right = "300em";
+                  }
+                  </script>
+                  <script>
+                    function zgodaoff() {
+                      document.getElementById("consent").style.display = "none";
+                      document.getElementById("consent").style.right = "-300em";
+                    }
+                    </script>
+              </form>
+              </div>
+              
+                <footer style="padding: 3em;align-items: center;overflow-y: hidden;" >
+                  <div style="text-align: center;margin-top: 0.5em;margin-bottom:1.5em;color: red;font-weight: 500;font-size: 3rem;"class="slidein2 fromdown">Contact us</div>
+                  <div style="display: flex;justify-content:space-around;">
+                  <div class="danefirmy" style="float: left;display: flex;flex-direction: column;"><p style="color: red;font-weight: 700;font-size: 1.5rem;"><i class="fa-solid fa-location-dot" style="color:blue;padding-right:0.5em;font-size: 1.5rem;"></i>Company's data</p><p><span style="text-transform:uppercase; font-weight:700;">Fugazi Sp.J.</span><br><br> ul. Lindego 20,<br><br> 31-148 Cracow</p></div>
+                  <div class="tel" style="float: left;display: flex;flex-direction: column;"><p style="color: red;font-weight: 700;font-size: 1.5rem;"><i class="fa-solid fa-phone" style="color:blue;padding-right:0.5em;font-size: 1.5rem;"></i>Contact Numbers</p><p>Biuro: +48 12 623 02 00,<br><br> Service: +48 12 638 66 44,<br><br> Vehicle mechanics: +48 510 119 257,<br><br> Installation: 508 244 422</p></div>
+                  <div class="email" style="float: left;display: flex;flex-direction: column;"><p style="color: red;font-weight: 700;font-size: 1.5rem;"><i class="fa-regular fa-envelope" style="color:blue;padding-right:0.5em;font-size: 1.5rem;"></i>Company email</p><a>biuro@fugazi.pl</a></div>
+                  <div class="h-otwarcia" style="float: left;display: flex;flex-direction: column;"><p style="color: red;font-weight: 700;font-size: 1.5rem;"><i class="fa-regular fa-clock" style="color:blue;padding-right:0.5em;font-size: 1.5rem;"></i>Opening hours</p><p><span style="text-transform:uppercase; font-weight:700;">Mon-Fri</span>: 8AM - 5PM</p></div>
+                </div>
+                 </footer style="clear:both;">
+                 <div style="font-size: 0.7em;background-color: grey;color:white;padding-top: 1em;padding-left:2em;display: flex;justify-content: space-between;flex-direction: row;min-width: 100vh;"><p style="vertical-align: middle;">All rights reserved - FUGAZI Sp.J&copy;</p><p style="vertical-align: middle;"> Information clause</p><p style="vertical-align: middle;padding-right: 1em;margin-bottom: 1em;">Designed by <img src="obrazy/esignature_cocosign2.png" alt="sign" style="width: 7em;vertical-align: middle;"></p></div>
+                
+                <script>
+                  const header = document.querySelector("header");
+const sectionOne = document.querySelector(".home-intro");
+
+const faders = document.querySelectorAll(".fadein");
+const sliders = document.querySelectorAll(".slidein");
+
+const sectionOneOptions = {
+  threshold:1,
+  rootMargin: "0px 0px -200px 0px"
+};
+
+const sectionOneObserver = new IntersectionObserver(function(
+  entries,
+  sectionOneObserver
+) {
+  entries.forEach(entry => {
+    if (!entry.isIntersecting) {
+      header.classList.add("nav-scrolled");
+    } else {
+      header.classList.remove("nav-scrolled");
+    }
+  });
+},
+sectionOneOptions);
+
+sectionOneObserver.observe(sectionOne);
+
+const appearOptions = {
+  threshold: 0,
+  rootMargin: "0px 0px -200px 0px"
+};
+
+const appearOnScroll = new IntersectionObserver(function(
+  entries,
+  appearOnScroll
+) {
+  entries.forEach(entry => {
+    if (!entry.isIntersecting) {
+      return;
+    } else {
+      entry.target.classList.add("appear");
+      appearOnScroll.unobserve(entry.target);
+    }
+  });
+},
+appearOptions);
+
+faders.forEach(fader => {
+  appearOnScroll.observe(fader);
+});
+
+sliders.forEach(slider => {
+  appearOnScroll.observe(slider);
+});
+                </script>
+                <script>
+                  const sliders2 = document.querySelectorAll(".slidein2");
+                  const sectionOneOptions2 = {
+  threshold:0,
+  rootMargin: "0px 0px 0px 0px"
+};
+
+const sectionOneObserver2 = new IntersectionObserver(function(
+  entries2,
+  sectionOneObserver2
+) {
+  entries2.forEach(entry2 => {
+    if (!entry2.isIntersecting) {
+      header.classList.add("nav-scrolled");
+    } else {
+      header.classList.remove("nav-scrolled");
+    }
+  });
+},
+sectionOneOptions2);
+
+sectionOneObserver2.observe(sectionOne);
+
+const appearOptions2 = {
+  threshold: 0,
+  rootMargin: "0px 0px -200px 0px"
+};
+
+const appearOnScroll2 = new IntersectionObserver(function(
+  entries2,
+  appearOnScroll2
+) {
+  entries2.forEach(entry2 => {
+    if (!entry2.isIntersecting) {
+      return;
+    } else {
+      entry2.target.classList.add("appear");
+      appearOnScroll2.unobserve(entry2.target);
+    }
+  });
+},
+appearOptions2);
+
+sliders2.forEach(slider2 => {
+  appearOnScroll2.observe(slider2);
+});
+                </script>
+        </body>
+    </html>

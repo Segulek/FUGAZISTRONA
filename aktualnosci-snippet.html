@@ -1,0 +1,292 @@
+<!DOCTYPE html>  
+    <html lang="pl-PL" xml:lang="pl">
+        <head>
+          <title>Fugazi - Autogaz Kraków montaż, serwis, mechanika pojazdowa - Fugazi S.J.</title>
+            <link rel="canonical" href="https://www.auto-gaz.pl/" />
+            <meta name="theme-color" content="red" />
+            <meta name="keywords" content="serwis, gaz, warsztat samochodowy, mechanika pojazdowa, auto serwis, lpg, mechanik, serwis samochodowy, mechanika samochodowa, montaż lpg">
+            <meta name='description' content='Fugazi Autogaz Autoserwis, Najstarszy Krakowski serwis samochodowy i mechanika pojazdowa od 1993r. Autoryzowany serwis AC Stag, Lovato, Landirenzo.'>
+            <meta name="og:image" content="obrazy/ico.png" />
+            <meta property="og:title" content="Strona Główna auto-gaz.pl">
+            <meta property="og:description" content="Fugazi Autogaz Autoserwis,najstarsza krakowska firma od 1993 w branży LPG i CNG.25 tyś.montaży.Instalacje gazowe AC Stag,Lovato,Landirenzo.">
+            <link rel="alternate" hreflang="x-default" href="https://www.auto-gaz.pl">
+            <link rel="website icon" type="png" href="obrazy/ico.png">
+            <link rel="stylesheet" type="text/css" href="style.css">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+            <script src="https://kit.fontawesome.com/b0e2697821.js" crossorigin="anonymous"></script>
+              <script src="js/jquery.min.js"></script>
+        </head>
+        <body>
+          <div class="ad">
+            <p style=""><i class="fa-solid fa-phone" style="padding-right: 0.5em;"></i><span style="padding-right: 2em;">Centrala: <a href="tel:126230200" style="transition: all 250ms ease-in-out;">+48 12 623 02 00</a></span><i class="fa-regular fa-envelope" style="padding-right: 0.5em;"></i> E-mail:<a style="padding-left: 0.5em;transition: all 250ms ease-in-out;" href="mailto:biuro@fugazi.pl" target="_blank" rel="noopener noreferrer">biuro@fugazi.pl</a></p>
+            <p style="gap:4em;">Znajdź nas: 
+              <a href="https://www.facebook.com/fugaziautogaz/" target="_blank" class="fb"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="https://www.youtube.com/channel/UCFVRHobQexF-VoUiH7WghLg" target="_blank" class="yt"><i class="fa-brands fa-youtube"></i></a>
+              <a href="https://www.instagram.com/kantynazlombol/" target="_blank" class="ig"><i class="fa-brands fa-instagram"></i></a>
+              <a href="https://www.facebook.com/fugaziautogaz/" target="_blank" class="tt"><i class="fa-brands fa-tiktok"></i></a>
+              <a href="http://stat.4u.pl/?Fugazi" target="_blank" class="stat4u" style="margin-left: 1em;">STAT4U</a>
+            </p>
+          </div>
+            <header id="navbar">
+                <div class="container">
+                    <a href="glowna.html"><img src="obrazy/fugazi logo2.jpg" alt="logo" class="logo"></a>
+                    <h1 style="color: white; display:flex;flex-direction: column;float: left;clear: right;font-size: 1.4em;vertical-align: middle;"><span style="color:red">Autogaz</span><span style="color: rgb(255, 145, 0);">Mechanika Samochodowa</span>
+                    </h1>
+                <nav class="navik">
+                    <ol>
+                      <li><a href="ofirmie.html">O firmie</a></li>
+                      <li><a href="oferta.html">Oferta</a></li>
+                      <li><a href="#">Aktualności</a></li>
+                      <li><a href="galeria.html">Galeria</a></li>
+                      <li><a href="kontakt.html">Kontakt</a></li>
+                      <li><a href="cennik.html">Cennik</a></li>
+                    </ol>
+                </nav>
+                
+                <div class="langbtn">
+                  <ul>
+                    <li style=" list-style-type: none;"><button style="font-size:1.5em; margin-right: 6em; color: blue;border: none;background-color: transparent;transition: scale 250ms;" onclick="toggle_visibility();"><i class="fa-solid fa-language"><span style="font-size: 0.5em;margin-left: 0.5em;vertical-align: middle;">Translate</span></i></button>
+                      <ul id="tak" style=" list-style-type: none; position: absolute; right:60%;display: none;">
+                        <li ><a href="glowna.html"><img src="obrazy/polska.png" alt="pl" style="  width: 1.5em; margin-top: 2em;" id="pl"></a></li>
+                        <li><a href="glowna-eng.html"><img src="obrazy/engflag.png" alt="eng" style="  width: 1.5em; height: auto;padding-top: 0.5em;" id="eng"></a></li>
+                        <li><a href="glowna-ua.html"><img src="obrazy/ukraina.png" alt="ua" style="  width: 1.5em; height: auto;padding-top: 0.5em;" id="ua"></a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                  <script>
+                    function toggle_visibility(tak) {
+        var e = document.getElementById('tak');
+        if(e.style.display == "block")
+          e.style.display = "none";
+        else
+          e.style.display = "block";
+	}
+                  </script>
+                </div>
+                <content>
+                  <input id="toggle" type="checkbox"></input>
+  
+  <label for="toggle" class="hamburger">
+    <div class="top-bun"></div>
+    <div class="meat"></div>
+    <div class="bottom-bun"></div>
+  </label>
+  
+  <div class="nav">
+    <div class="nav-wrapper">
+      <nav class="navek"><input id="toggle" type="checkbox"></input>
+          <div class="nav">
+            <div class="nav-wrapper">
+            </div>
+          </div>
+          <a href="ofirmie.html">O firmie</a>
+        <a href="oferta.html">Oferta</a>
+        <a href="#">Aktualności</a>
+        <a href="galeria.html">Galeria</a>
+        <a href="kontakt.html">Kontakt</a>
+        <a href="cennik.html">Cennik</a>
+        
+      </nav>
+    </div>
+  </div>
+  </content>
+<div class="cookies-eu-banner hidden">
+  Nasz serwis używa <span class="ciastko">cookies</span>. Korzystając ze strony wyrażasz zgodę na używanie cookies, zgodnie z aktualnymi ustawieniami przeglądarki.
+  <button>Akceptuj</button>
+</div>
+<script>(() => {
+  const getCookie = (name) => {
+    const value = " " + document.cookie;
+    console.log("value", `==${value}==`);
+    const parts = value.split(" " + name + "=");
+    return parts.length < 2 ? undefined : parts.pop().split(";").shift();
+  };
+
+  const setCookie = function (name, value, expiryDays, domain, path, secure) {
+    const exdate = new Date();
+    exdate.setHours(
+      exdate.getHours() +
+        (typeof expiryDays !== "number" ? 365 : expiryDays) * 24
+    );
+    document.cookie =
+      name +
+      "=" +
+      value +
+      ";expires=" +
+      exdate.toUTCString() +
+      ";path=" +
+      (path || "/") +
+      (domain ? ";domain=" + domain : "") +
+      (secure ? ";secure" : "");
+  };
+
+  const $cookiesBanner = document.querySelector(".cookies-eu-banner");
+  const $cookiesBannerButton = $cookiesBanner.querySelector("button");
+  const cookieName = "cookiesBanner";
+  const hasCookie = getCookie(cookieName);
+
+  if (!hasCookie) {
+    $cookiesBanner.classList.remove("hidden");
+  }
+
+  $cookiesBannerButton.addEventListener("click", () => {
+    setCookie(cookieName, "closed");
+    $cookiesBanner.remove();
+  });
+})();</script>
+            </header>
+            <div class="cont home-intro">
+                <section class="oferta">
+                    <h2>Akutalności</h2>
+                </section>
+               <section style="padding: 6em;padding-top: 0;margin-top: 4em;">
+                
+                <div style="padding: 10em; padding-top:1em;">
+                    <div class="grid1">
+                      <div><img src="obrazy/1.jpg" alt="Serwis lpg" class="slidein odlewej2" style="height: 21.2em;"></div>
+                      <div style="padding: 3em;" class="slidein fromright2"><h3 style="font-size: 1.5em;margin-bottom: 0.5em;font-weight: 700;color: red;">"Nagłówek"</h3><p><span style="font-weight: 500;">12 marca 2023</span><br><br>
+                      TEKST </p></div>
+                    </div>
+                    
+               </section>
+                
+               <div class="module-border-wrap">
+                <div class="współpraca column-right slide" style="z-index:-10;background-color:white;display: flex;justify-content: center;align-items: center;flex-direction: row;border-top: 2px solid linear-gradient(90deg, rgba(255,0,0,1) 29%, rgba(255,151,0,1) 64%);max-width: 100vw;">
+                  <div style="padding: 4em;display: flex;flex-direction: row;gap: 4em;" class="loga">
+                  <a href="https://nexusautopolska.pl" target="_blank" class="slidein fromleft"><img src="obrazy/logo-nexusauto.png" alt="nexusautopolska" class="stag" style="margin-top: 0.8em;"></a>
+                  <a href="https://www.stag.pl" target="_blank" class="slidein fromleft" style="transition-delay:250ms"><img src="obrazy/logo.svg" alt="STAG" class="stag staguś"></a>
+                  <a href="https://www.ac.com.pl" target="_blank" class="slidein fromleft" style="transition-delay:400ms"><img src="obrazy/ac-logo.png" alt="AC" class="stag"></a>
+                  <a href="https://landi.pl" target="_blank" class="slidein fromleft" style="transition-delay:500ms"><img src="obrazy/landirenzo-logo.png" alt="landi" class="stag"></a>
+                  <a href="https://landi.pl" target="_blank" class="slidein fromleft" style="transition-delay:600ms"><img src="obrazy/landi-logo.png" alt="landirenzo" class="stag"></a>
+                  <a href="https://www.lovato.pl" target="_blank" class="slidein fromleft" style="transition-delay:700ms"><img src="obrazy/lovato-logo.png" alt="lovato" class="stag"></a>
+                  <a href="https://www.jlmlubricants.com/en-gb" target="_blank" class="slidein fromleft" style="transition-delay:800ms"><img src="obrazy/jlm-logo.png" alt="jlm" class="stag" style="filter: grayscale(100%), sepia(30%);transition: all 200ms ease-in-out;"></a>
+                </div>
+                </div>
+              </div>
+                 
+              <footer style="padding: 3em;align-items: center;overflow-y: hidden;">
+                <div style="text-align: center;margin-top: 0.5em;margin-bottom:1.5em;color: red;font-weight: 500;font-size: 3rem;" class="slidein2 fromdown">Skontaktuj się z nami</div>
+                <div class="danewszystkie" style="display: flex;justify-content:space-around;">
+                <div class="danefirmy" style="float: left;display: flex;flex-direction: column;"><p class="akapity" style="color: red;font-weight: 700;font-size: 1.5rem;"><i class="fa-solid fa-location-dot ikonka" style="color:blue;padding-right:0.5em;font-size: 1.5rem;"></i>Dane Firmy</p><p><span style="text-transform:uppercase; font-weight:700;">Fugazi Sp.J.</span><br><br> ul. Lindego 20,<br><br> 31-148 Kraków</p></div>
+                <div class="tel" style="float: left;display: flex;flex-direction: column;"><p class="akapity" style="color: red;font-weight: 700;font-size: 1.5rem;"><i class="fa-solid fa-phone ikonka" style="color:blue;padding-right:0.5em;font-size: 1.5rem;"></i>Telefony Kontaktowe</p><p>Centrala: <a href="tel:126230200">+48 12 623 02 00</a>,<br><br> Gaz Serwis: <a href="tel:126386644">+48 12 638 66 44</a>,<br><br> Mechanika Pojazdowa: <a href="tel:510119257">+48 510 119 257</a>,<br><br> Gaz Montaż: <a href="tel:508244422">+48 508 244 422</a></p></div>
+                <div class="email" style="float: left;display: flex;flex-direction: column;"><p class="akapity" style="color: red;font-weight: 700;font-size: 1.5rem;"><i class="fa-regular fa-envelope ikonka" style="color:blue;padding-right:0.5em;font-size: 1.5rem;"></i>E-mail Firmy</p><a href="mailto:biuro@fugazi.pl" target="_blank" rel="noopener noreferrer">biuro@fugazi.pl</a></div>
+                <div class="h-otwarcia" style="float: left;display: flex;flex-direction: column;"><p class="akapity" style="color: red;font-weight: 700;font-size: 1.5rem;"><i class="fa-regular fa-clock ikonka" style="color:blue;padding-right:0.5em;font-size: 1.5rem;"></i>Godziny Otwarcia</p><p><span style="text-transform:uppercase; font-weight:700;">Pon-Pt</span>: 8:00 - 17:00<br><br><span style="text-transform:uppercase; font-weight:700;">Sob-Nie</span>: <span style="text-transform:uppercase;">zamnkięte</span></p></div>
+                <div class="hurtownia" style="float: left;display: flex;flex-direction: column;"><p class="akapity" style="color: red;font-weight: 700;font-size: 1.5rem;"><i class="fa-solid fa-industry ikonka" style="color:blue;padding-right:0.5em;font-size: 1.5rem;"></i>Nasza Hurtownia</p><p><span style="text-transform:uppercase; font-weight:700;"><a href="https://www.pegas.biz/" target="_blank">Pegas S.C</a></span><br><br> ul. Lindego 20,<br><br> 31-148 Kraków</p></div>
+               </footer style="clear:both;">
+                   <div style="display: flex; flex-direction:row;justify-content:center; gap:2em; padding: 2em;">
+                    <i class="fa-brands fa-square-facebook FMAIN"></i>
+                    <i class="fa-brands fa-square-facebook MSFACEBOOK"><br><span class="sociale" style="display:none;">Mechanika Samochodowa</span></i>
+                    <i class="fa-brands fa-square-facebook SFACEBOOK"><span class="sociale" style="display:none;">Serwis</span></i>
+                    <i class="fa-brands fa-instagram INSTAGRAM"><span class="sociale" style="display:none;">Fugazi</span></i>
+                    <i class="fa-brands fa-youtube YT"><span class="sociale" style="display:none;">Fugazi</span></i>
+                    <i class="fa-brands fa-tiktok TIKTOK"><span class="sociale" style="display:none;">Fugazi</span></i>
+                   </div>
+                   <div class="footer2" style="font-size: 0.75em;background-color: rgb(201, 201, 201);color:white;padding: 1em;display: flex;justify-content: space-around;flex-direction: row;max-width: 100vw;align-items: center;"><p style="vertical-align: middle;">Wszelkie prawa zastrzeżone - FUGAZI Sp.J&copy;</p><p style="vertical-align: middle;"> <a href="./KLAUZULA_INFORMACYJNA.pdf download">Klauzula informacyjna</a></p><p style="vertical-align: middle;padding-right: 1em;margin-bottom: 1em;">Designed by <img src="obrazy/esignature_cocosign2.png" alt="sign" style="width: 7em;vertical-align: middle;"></p></div>
+                <script>
+                  const header = document.querySelector("header");
+const sectionOne = document.querySelector(".home-intro");
+
+const faders = document.querySelectorAll(".fadein");
+const sliders = document.querySelectorAll(".slidein");
+
+const sectionOneOptions = {
+  threshold:1,
+  rootMargin: "0px 0px -200px 0px"
+};
+
+const sectionOneObserver = new IntersectionObserver(function(
+  entries,
+  sectionOneObserver
+) {
+  entries.forEach(entry => {
+    if (!entry.isIntersecting) {
+      header.classList.add("nav-scrolled");
+    } else {
+      header.classList.remove("nav-scrolled");
+    }
+  });
+},
+sectionOneOptions);
+
+sectionOneObserver.observe(sectionOne);
+
+const appearOptions = {
+  threshold: 0,
+  rootMargin: "0px 0px -200px 0px"
+};
+
+const appearOnScroll = new IntersectionObserver(function(
+  entries,
+  appearOnScroll
+) {
+  entries.forEach(entry => {
+    if (!entry.isIntersecting) {
+      return;
+    } else {
+      entry.target.classList.add("appear");
+      appearOnScroll.unobserve(entry.target);
+    }
+  });
+},
+appearOptions);
+
+faders.forEach(fader => {
+  appearOnScroll.observe(fader);
+});
+
+sliders.forEach(slider => {
+  appearOnScroll.observe(slider);
+});
+                </script>
+                <script>
+                  const sliders2 = document.querySelectorAll(".slidein2");
+                  const sectionOneOptions2 = {
+  threshold:0,
+  rootMargin: "0px 0px 0px 0px"
+};
+
+const sectionOneObserver2 = new IntersectionObserver(function(
+  entries2,
+  sectionOneObserver2
+) {
+  entries2.forEach(entry2 => {
+    if (!entry2.isIntersecting) {
+      header.classList.add("nav-scrolled");
+    } else {
+      header.classList.remove("nav-scrolled");
+    }
+  });
+},
+sectionOneOptions2);
+
+sectionOneObserver2.observe(sectionOne);
+
+const appearOptions2 = {
+  threshold: 0,
+  rootMargin: "0px 0px -200px 0px"
+};
+
+const appearOnScroll2 = new IntersectionObserver(function(
+  entries2,
+  appearOnScroll2
+) {
+  entries2.forEach(entry2 => {
+    if (!entry2.isIntersecting) {
+      return;
+    } else {
+      entry2.target.classList.add("appear");
+      appearOnScroll2.unobserve(entry2.target);
+    }
+  });
+},
+appearOptions2);
+
+sliders2.forEach(slider2 => {
+  appearOnScroll2.observe(slider2);
+});
+                </script>
+        </body>
+    </html>
