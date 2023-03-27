@@ -158,13 +158,13 @@
                 <div class="module-border-wrap">
                   <div class="współpraca column-right slide" style="z-index:-10;background-color:white;display: flex;justify-content: center;align-items: center;flex-direction: row;border-top: 2px solid linear-gradient(90deg, rgba(255,0,0,1) 29%, rgba(255,151,0,1) 64%);max-width: 100vw;">
                     <div style="padding: 4em;display: flex;flex-direction: row;gap: 4em;" class="loga">
-                    <a href="https://nexusautopolska.pl" target="_blank" class="slidein fromleft"><img src="obrazy/logo-nexusauto.png" alt="nexusautopolska" class="stag" style="margin-top: 0.8em;"></a>
-                    <a href="https://www.stag.pl" target="_blank" class="slidein fromleft" style="transition-delay:250ms"><img src="obrazy/logo.svg" alt="STAG" class="stag staguś"></a>
-                    <a href="https://www.ac.com.pl" target="_blank" class="slidein fromleft" style="transition-delay:400ms"><img src="obrazy/ac-logo.png" alt="AC" class="stag"></a>
-                    <a href="https://landi.pl" target="_blank" class="slidein fromleft" style="transition-delay:500ms"><img src="obrazy/landirenzo-logo.png" alt="landi" class="stag"></a>
-                    <a href="https://landi.pl" target="_blank" class="slidein fromleft" style="transition-delay:600ms"><img src="obrazy/landi-logo.png" alt="landirenzo" class="stag"></a>
-                    <a href="https://www.lovato.pl" target="_blank" class="slidein fromleft" style="transition-delay:700ms"><img src="obrazy/lovato-logo.png" alt="lovato" class="stag"></a>
-                    <a href="https://www.jlmlubricants.com/en-gb" target="_blank" class="slidein fromleft" style="transition-delay:800ms"><img src="obrazy/jlm-logo.png" alt="jlm" class="stag" style="filter: grayscale(100%), sepia(30%);transition: all 200ms ease-in-out;"></a>
+                    <a href="https://nexusautopolska.pl" target="_blank"><img src="obrazy/logo-nexusauto.png" alt="nexusautopolska" class="stag stag1" style="margin-top: 0.8em;"></a>
+                    <a href="https://www.stag.pl" target="_blank" style="transition-delay:250ms"><img src="obrazy/logo.svg" alt="STAG" class="stag stag2 staguś"></a>
+                    <a href="https://www.ac.com.pl" target="_blank" style="transition-delay:400ms"><img src="obrazy/ac-logo.png" alt="AC" class="stag stag3"></a>
+                    <a href="https://landi.pl" target="_blank" style="transition-delay:500ms"><img src="obrazy/landirenzo-logo.png" alt="landi" class="stag stag4"></a>
+                    <a href="https://landi.pl" target="_blank" style="transition-delay:600ms"><img src="obrazy/landi-logo.png" alt="landirenzo" class="stag stag5"></a>
+                    <a href="https://www.lovato.pl" target="_blank style="transition-delay:700ms"><img src="obrazy/lovato-logo.png" alt="lovato" class="stag stag6"></a>
+                    <a href="https://www.jlmlubricants.com/en-gb" target="_blank" style="transition-delay:800ms"><img src="obrazy/jlm-logo.png" alt="jlm" class="stag stag7" style="filter: grayscale(100%), sepia(30%);transition: all 200ms ease-in-out;"></a>
                   </div>
                   </div>
                 </div>
@@ -373,36 +373,56 @@ sliders2.forEach(slider2 => {
   appearOnScroll2.observe(slider2);
 });
                 </script>
-                <script>
-                  const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-      
-      let interval = null;
-      const x = document.getElementsByClassName("nav");
+               <script>
+                var slideUp1 = {
+                  reset:true,
+      distance: '50px',
+      origin: 'bottom'
+    };
+    var slideUp2 = {
+      reset:true,
+      distance: '50px',
+      origin: 'bottom',
+      delay: 100
+    };
+    var slideUp3 = {
+      reset:true,
+      distance: '50px',
+      origin: 'bottom',
+      delay: 200
+    };
+    var slideUp4 = {
+      reset:true,
+      distance: '50px',
+      origin: 'bottom',
+      delay: 300
+    };
+    var slideUp5 = {
+      reset:true,
+      distance: '50px',
+      origin: 'bottom',
+      delay: 400
+    };
+    var slideUp6 = {
+      reset:true,
+      distance: '50px',
+      origin: 'bottom',
+      delay: 500
+    };
+    var slideUp7 = {
+      reset:true,
+      distance: '50px',
+      origin: 'bottom',
+      delay: 600
+    };
 
-      document.querySelectorAll("a").onmouseover = event => {  
-        let iteration = 0;
-        
-        clearInterval(interval);
-        
-        interval = setInterval(() => {
-          event.target.innerText = event.target.innerText
-            .split("")
-            .map((letter, index) => {
-              if(index < iteration) {
-                return event.target.dataset.value[index];
-              }
-            
-              return letters[Math.floor(Math.random() * 26)]
-            })
-            .join("");
-          
-          if(iteration >= event.target.dataset.value.length){ 
-            clearInterval(interval);
-          }
-          
-          iteration += 1 / 3;
-        }, 30);
-      }
-                </script>
+  ScrollReveal().reveal('.stag1', slideUp1);
+  ScrollReveal().reveal('.stag2', slideUp2);
+  ScrollReveal().reveal('.stag3', slideUp3);
+  ScrollReveal().reveal('.stag4', slideUp4);
+  ScrollReveal().reveal('.stag5', slideUp5);
+  ScrollReveal().reveal('.stag6', slideUp6);
+  ScrollReveal().reveal('.stag7', slideUp7);
+               </script>
         </body>
     </html>
